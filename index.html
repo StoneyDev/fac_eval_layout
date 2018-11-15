@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Yann DEROUES</title>
+	</head>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		img {
+			width: 100%;
+		}
+
+		.txtcenter {
+			text-align: center;
+		}
+
+		.container {
+			display: flex;
+			margin: 0 auto;
+			justify-content: space-around;
+			flex-wrap:wrap;
+		}
+
+		.col {
+			padding: 5px;
+		}
+
+		@media only screen and (min-width: 768px) and (max-width: 970px), (min-width: 971px){
+			.container {
+				width: 700px;
+			}
+
+			.col {
+				width: 49%;
+			}
+		}
+
+		@media only screen and (min-width: 1370px) {
+			.container {
+				width: 1200px;
+				justify-content: space-around;
+				flex-wrap: nowrap;
+			}
+		}
+	</style>
+	<body>
+		<h1 class="txtcenter">Evaluation  Layout</h1>
+		<h2 class="desktopG txtcenter">Vue Desktop > 1370px</h2>
+		<h2 class="desktop txtcenter">Vue Desktop</h2>
+		<h2 class="tablette txtcenter">Vue Tablette à 768px à 970px</h2>
+		<h2 class="telephone txtcenter">Vue Téléphone à 320px</h2>
+
+		<div class="container">
+			<div class="col">
+				<img src="img/mer.jpg" alt="Mer">
+			</div>
+			<div class="col">
+				<img src="img/lac.jpg" alt="Lac">
+			</div>
+			<div class="col">
+				<img src="img/montagne.jpg" alt="Montagne">
+			</div>
+			<div class="col">
+				<img src="img/foret.jpg" alt="Foret">
+			</div>
+		</div>
+	</body>
+</html>
